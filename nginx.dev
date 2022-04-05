@@ -4,7 +4,7 @@ http {
   client_max_body_size 20m;
 
   server {
-    server_name deso.run;
+    server_name node.desofy.app;
 
     location / {
       proxy_pass http://frontend:8080;
@@ -15,9 +15,9 @@ http {
     }
 
     listen 80;
-    # listen 443 ssl;
-    # ssl_certificate /etc/letsencrypt/live/server2.your.domain/fullchain.pem;
-    # ssl_certificate_key /etc/letsencrypt/live/server2.your.domain/privkey.pem;
+    listen 443 ssl;
+    ssl_certificate /etc/letsencrypt/live/node.desofy.app/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/node.desofy.app/privkey.pem;
     # include /etc/letsencrypt/options-ssl-nginx.conf;
   }
 }

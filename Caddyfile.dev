@@ -13,6 +13,7 @@
       default-src 'self';
       connect-src 'self'
         api.bitclout.com bitclout.com:*
+        api.node.desofy.app node.desofy.app:*
         bithunt.bitclout.com pulse.bitclout.com https://altumbase.com
         api.bitpop.dev
         deso.run:* api.deso.run:*
