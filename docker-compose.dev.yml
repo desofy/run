@@ -14,6 +14,9 @@ services:
     expose:
     - "17001"
     - "17000"
+    ulimits:
+      nproc: 999999
+      nofile: 999999
   frontend:
     container_name: frontend 
     image: docker.io/desoprotocol/frontend:latest
