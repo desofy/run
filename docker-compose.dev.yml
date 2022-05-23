@@ -14,7 +14,7 @@ services:
     expose:
     - "17001"
     - "17000"
-    mem_limit: 120g
+    mem_limit: 30g
     ulimits:
       nproc: 999999
       nofile: 999999
